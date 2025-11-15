@@ -18,7 +18,7 @@ function initSocketServer(httpServer){
             credentials: true
         }
     })
-    console.log("hello");
+    
     
  
 
@@ -105,7 +105,7 @@ io.use(async (socket,next)=>{
         
 
        
-     console.log(chatHistory);
+    //  console.log(chatHistory);
      
         
 
