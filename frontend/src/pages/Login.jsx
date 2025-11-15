@@ -21,7 +21,7 @@ const Login = () => {
 
         console.log(form);
 
-        axios.post("http://localhost:3000/api/login", {
+        axios.post("https://chta-gpt.onrender.com/api/login", {
             email: form.email,
             password: form.password
         },

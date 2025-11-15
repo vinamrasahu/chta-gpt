@@ -18,7 +18,7 @@ const Register = () => {
         setSubmitting(true);
         console.log(form);
 
-        axios.post("http://localhost:3000/api/register", {
+        axios.post("https://chta-gpt.onrender.com/api/register", {
             email: form.email,
             firstname: form.firstname,
             lastname: form.lastname,
