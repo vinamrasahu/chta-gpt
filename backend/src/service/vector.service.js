@@ -6,8 +6,7 @@ const pc = new Pinecone({
 
 const chatGptIndex = pc.index('chat-gpt');
 
-// ---------------------------
-// 🔥 Generic Timeout Wrapper
+
 // ---------------------------
 async function withTimeout(promise, ms = 8000) {
   const controller = new AbortController();
@@ -25,8 +24,7 @@ async function withTimeout(promise, ms = 8000) {
   }
 }
 
-// ---------------------------
-// 🔥 CREATE MEMORY (UPSERT)
+
 // ---------------------------
 async function createMemory({ vectors, metadata, messageId }) {
   try {
@@ -44,8 +42,7 @@ async function createMemory({ vectors, metadata, messageId }) {
   }
 }
 
-// ---------------------------
-// 🔥 QUERY MEMORY
+
 // ---------------------------
 async function querryMemory({ querryvector, limit, metadata }) {
   try {
